@@ -9,23 +9,21 @@ const backg = {
   backgroundColor: '#181818'
 };
 
-export const Sectionthree = () => (
+export const EconSecFive = () => (
 <div style={backg}>
 <div className="container my-5 py-5 z-depth-1">
     <section className="px-md-5 mx-md-5 text-center text-lg-left text-white">
         <div className="row">
             <div className="col-md-6 mb-4 mb-md-0">
 
-              <h3 className="font-weight-bold">Students, Not Cheaters</h3>
+              <h3 className="font-weight-bold">Online Consultation</h3>
 
-              <p className="">Most students are accustomed to a learning-style 
-                consistent with our competitors, which consists of being given direct 
-                answers to questions. However, ArcAcademia will guide users in discovering 
-                the answers themselves to promote learning and material retention.</p>
+              <p className="">ArcEconomy provides direction for companies and individuals, 
+              depending on the subscription edition, for economic growth in specific 
+              industry types. While outside consultation was typically necessary, 
+              it is no longer needed with ArcEconomy.</p>
 
-              <p className="">Don’t sacrifice your learning experience to an outdated format of learning, 
-                 when you can attain better results at a fraction of the time.</p>
-    
+              
             </div>
            
             <div className="col-md-6 mb-4 mb-md-0">

@@ -9,7 +9,7 @@ const widthStyle = {
     backgroundColor: '#181818'
   };
 
-export const Sectionsix = () => (
+export const HNASecThree = () => (
 <div style={backg}>
 <div className="container my-5 py-5 z-depth-1">
     <section className="px-md-5 mx-md-5 text-center text-lg-left text-white">
@@ -18,7 +18,7 @@ export const Sectionsix = () => (
 
               <h3 className="font-weight-bold">Personalized HNA.LIVE Account</h3>
     
-              <p className="">A subscription to ArcAcademia grants users access to an 
+              <p className="">A subscription to HourNationArc grants users access to an 
               HNA.LIVE account that is tailored to accommodate their unique needs and 
               allows for personalization of all content. </p>
 

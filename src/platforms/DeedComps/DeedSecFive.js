@@ -9,22 +9,21 @@ const backg = {
   backgroundColor: '#181818'
 };
 
-export const Sectionthree = () => (
+export const DeedSecFive = () => (
 <div style={backg}>
 <div className="container my-5 py-5 z-depth-1">
     <section className="px-md-5 mx-md-5 text-center text-lg-left text-white">
         <div className="row">
             <div className="col-md-6 mb-4 mb-md-0">
 
-              <h3 className="font-weight-bold">Students, Not Cheaters</h3>
+              <h3 className="font-weight-bold">Continuous Verification</h3>
 
-              <p className="">Most students are accustomed to a learning-style 
-                consistent with our competitors, which consists of being given direct 
-                answers to questions. However, ArcAcademia will guide users in discovering 
-                the answers themselves to promote learning and material retention.</p>
+              <p className="">ArcDeed integrates AI software to ensure that the 
+              real-time information pertaining to the real estate market is 
+              accurate and current.</p>
 
-              <p className="">Don’t sacrifice your learning experience to an outdated format of learning, 
-                 when you can attain better results at a fraction of the time.</p>
+              <p className="">This information is congruent with the property parcels across all four 
+              regions in the United States and is continuously monitored by the ArcDeed team.</p>
     
             </div>
            

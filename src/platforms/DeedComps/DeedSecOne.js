@@ -5,11 +5,11 @@ const backg = {
     backgroundColor: '#181818'
 };
 
-export const Sectiontwo = () => (
+export const DeedSecOne = () => (
     
     <section id="cliens" style={backg}>
     
-      <h6 className="text-center text-white">The premiere educational software within these school systems</h6>
+      <h6 className="text-center text-white">ArcDeed found homes for:</h6>
         
       <div className="container">
 

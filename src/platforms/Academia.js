@@ -1,23 +1,25 @@
 import React from 'react'
-import { Button } from 'react-bootstrap';
-import { Sectiontwo } from './academiaComps/sectiontwo'
-import { Sectionthree } from './academiaComps/sectionthree'
-import { Sectionfour } from './academiaComps/sectionfour'
-import { Sectionfive } from './academiaComps/sectionfive'
-import { Sectionsix } from './academiaComps/sectionsix'
-import { Sectionseven } from './academiaComps/sectionseven'
-import { Sectioneight } from './academiaComps/sectioneight'
-import { Tabs, Tab } from 'react-bootstrap';
-import '../styles.css'
+import { Button, Tabs, Tab } from 'react-bootstrap';
+import { Sectiontwo } from './AcademiaComps/sectiontwo'
+import { Sectionthree } from './AcademiaComps/sectionthree'
+import { Sectionfour } from './AcademiaComps/sectionfour'
+import { Sectionfive } from './AcademiaComps/sectionfive'
+import { Sectionsix } from './AcademiaComps/sectionsix'
+import { Sectionseven } from './AcademiaComps/sectionseven'
+import { Sectioneight } from './AcademiaComps/sectioneight'
 
 const widthStyle = {
   width: '100%'
 };
 
+const backg = {
+  backgroundColor: '#181818'
+};
+
 
 export const Academia = () => (
   <React.Fragment>
-  <section id="hero" className="bg-dark d-flex align-items-center" >
+  <section id="hero" className="d-flex align-items-center" style={backg}>
     <div className="container">
       <div className="row align-items-center">
         <div className="col-lg12">
@@ -51,7 +53,7 @@ export const Academia = () => (
                   <h4 className="font-weight-bold">Education at a Glance</h4>
                   <p className="tgrey-text">The average student spends thirty hours per week studying; however, 
                   this is no longer necessary as ArcAcademia diminishes one’s browser hours 
-                  through its time-saving tools and Artificial Intelligence presence</p>
+                  through its time-saving tools and Artificial Intelligence presence. </p>
 
                   <a className="font-weight-bold" href="google.com" >Learn more<i className="fa fa-angle-right ml-2"></i></a>
                 </div>

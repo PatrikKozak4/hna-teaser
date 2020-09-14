@@ -9,7 +9,7 @@ const backg = {
     backgroundColor: '#181818'
 };
 
-export const Sectioneight = () => (
+export const EconSecSeven = () => (
 
 <footer style={backg} className="page-footer font-small">
 <div className="container text-center text-white text-md-left">

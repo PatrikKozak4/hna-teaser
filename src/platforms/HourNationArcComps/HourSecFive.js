@@ -9,22 +9,21 @@ const backg = {
   backgroundColor: '#181818'
 };
 
-export const Sectionthree = () => (
+export const HourSecFive = () => (
 <div style={backg}>
 <div className="container my-5 py-5 z-depth-1">
     <section className="px-md-5 mx-md-5 text-center text-lg-left text-white">
         <div className="row">
             <div className="col-md-6 mb-4 mb-md-0">
 
-              <h3 className="font-weight-bold">Students, Not Cheaters</h3>
+              <h3 className="font-weight-bold">I Don't Know lol</h3>
 
-              <p className="">Most students are accustomed to a learning-style 
-                consistent with our competitors, which consists of being given direct 
-                answers to questions. However, ArcAcademia will guide users in discovering 
-                the answers themselves to promote learning and material retention.</p>
+              <p className="">Through our limited characters and unbiased news reports, 
+              users will no longer have to sacrifice hours of their day to personal 
+              agenda oriented media conglomerates.</p>
 
-              <p className="">Don’t sacrifice your learning experience to an outdated format of learning, 
-                 when you can attain better results at a fraction of the time.</p>
+              <p className="">HourNationArc supplements the related big data 
+              values into graphical, easy-to-understand comprehension.</p>
     
             </div>
            

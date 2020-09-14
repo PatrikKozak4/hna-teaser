@@ -5,11 +5,11 @@ const backg = {
     backgroundColor: '#181818'
 };
 
-export const Sectiontwo = () => (
+export const HNASecOne = () => (
     
     <section id="cliens" style={backg}>
     
-      <h6 className="text-center text-white">The premiere educational software within these school systems</h6>
+      <h6 className="text-center text-white">The premiere media software utilized online: </h6>
         
       <div className="container">
 

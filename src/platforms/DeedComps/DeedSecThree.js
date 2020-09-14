@@ -9,7 +9,7 @@ const widthStyle = {
     backgroundColor: '#181818'
   };
 
-export const Sectionsix = () => (
+export const DeedSecThree = () => (
 <div style={backg}>
 <div className="container my-5 py-5 z-depth-1">
     <section className="px-md-5 mx-md-5 text-center text-lg-left text-white">
@@ -18,12 +18,12 @@ export const Sectionsix = () => (
 
               <h3 className="font-weight-bold">Personalized HNA.LIVE Account</h3>
     
-              <p className="">A subscription to ArcAcademia grants users access to an 
-              HNA.LIVE account that is tailored to accommodate their unique needs and 
-              allows for personalization of all content. </p>
+              <p className="">A subscription to ArcDeed grants users access to an HNA.LIVE 
+              account that is tailored to accommodate their unique needs and allows for 
+              personalization of all content. </p>
 
-              <p className="">Users can modify icons, tools, and documents present 
-              on their dashboard to promote convenience and showcase their individuality!</p>
+              <p className="">Users can modify icons, tools, and documents present on their 
+              dashboard to promote convenience and showcase their individuality!</p>
 
               <Button variant="primary">Subscribe</Button>{' '}
     

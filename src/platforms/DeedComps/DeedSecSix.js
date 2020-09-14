@@ -6,13 +6,13 @@ const widthStyle = {
 };
 
 const backg = {
-    backgroundColor: '#181818'
+    backgroundColor: 'white'
 };
 
-export const Sectioneight = () => (
+export const DeedSecSix = () => (
 
 <footer style={backg} className="page-footer font-small">
-<div className="container text-center text-white text-md-left">
+<div className="container text-center text-black text-md-left">
   <div className="row">
     <div className="col-md-3 mx-auto">
 
@@ -125,7 +125,7 @@ export const Sectioneight = () => (
   </div>
 </div>
 
-<div className="footer-copyright text-center text-white py-3">© 2020 Copyright:
+<div className="footer-copyright text-center text-black py-3">© 2020 Copyright:
   <a href="google.com"> HourNationArchive.com</a>
 </div>
 

@@ -1,10 +1,6 @@
 import React from 'react'
 import '../../focus-visible'
 
-const academ3D= {
-    width: '285px',
-    height: '235px',
-};
 
 const AcademiaLogo = () => {
     return (

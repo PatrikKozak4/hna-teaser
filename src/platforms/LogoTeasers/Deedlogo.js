@@ -1,5 +1,4 @@
 import React from 'react'
-import Deedlogo from '../../ThreeDfiles/ThreeDArcDeed/ADLogo3Dim.glb'
 import '../../focus-visible'
  
 const deed3D= {

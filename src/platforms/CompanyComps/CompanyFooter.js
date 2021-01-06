@@ -1,12 +1,5 @@
 import React from 'react'
 
-const widthStyle = {
-  width: '100%'
-};
-
-const backg = {
-    backgroundColor: '#181818'
-};
 
 const bluecolor = {
   backgroundColor: '#00BFFF'

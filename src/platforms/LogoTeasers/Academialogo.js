@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react'
-import { Button, Tabs, Tab, InputGroup, FormControl } from 'react-bootstrap';
+import React from 'react'
 import Academialogo from '../../ThreeDfiles/ThreeDAcademia/TryThis.glb'
 import '../../focus-visible'
 

@@ -1,12 +1,6 @@
-import React, {useState, useEffect} from 'react'
-import { Button, Tabs, Tab, InputGroup, FormControl } from 'react-bootstrap';
-import Academialogo from '../../ThreeDfiles/ThreeDAcademia/TryThis.glb'
+import React from 'react'
 import '../../focus-visible'
 
-const academ3D= {
-    width: '400px',
-    height: '350px',
-};
 
 const AcademiaInfo = () => {
     return (

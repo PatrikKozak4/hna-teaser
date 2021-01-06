@@ -1,13 +1,6 @@
-import React, {useState, useEffect} from 'react'
-import { Button, Tabs, Tab, InputGroup, FormControl, Modal } from 'react-bootstrap';
-import hnalogo from '../../ThreeDfiles/ThreeDHNArc/HourNAtionArcccc.glb'
+import React from 'react'
 import '../../focus-visible'
 
-  
-const hna3Dlogo = {
-    width: '350px',
-    height: '350px',
-};
 
 const HNAInfo = () => {
     return (

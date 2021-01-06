@@ -1,12 +1,6 @@
-import React, {useState, useEffect} from 'react'
-import { Button, Tabs, Tab, InputGroup, FormControl } from 'react-bootstrap';
-import Econlogo from '../../ThreeDfiles/ThreeDEconomy/AELogo3DLo.glb'
+import React from 'react'
 import '../../focus-visible'
-  
-const econ3D= {
-  width: '340px',
-  height: '350px',
-};
+
 
 const EconInfo = () => {
     return (

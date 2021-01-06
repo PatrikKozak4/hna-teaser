@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import { Button, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
-import ContactUs from '../platforms/ContactUs'
 import GetStarted from '../platforms/GetStarted'
 
 const Styles = styled.div`
@@ -63,7 +62,7 @@ closeStartedModal = () => {
                 <Nav.Link style={{marginRight: 10}}><span className="text-white my-auto">Register for our Waitlist!</span></Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <a onClick={this.openStartedModal} style={btncolor} className="btn  text-white">Sign Up!<i></i></a>
+                <a onClick={this.openStartedModal} style={btncolor} href="#!" className="btn text-white">Sign Up!<i></i></a>
             </Nav.Item>
           </Navbar.Collapse>
           

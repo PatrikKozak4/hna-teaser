@@ -1,11 +1,9 @@
 import React from 'react'
-import { Button, Tabs, Tab } from 'react-bootstrap';
+import { Tabs, Tab } from 'react-bootstrap';
 import Gallery from './CompanyComps/Gallery'
-import {Investors} from './CompanyComps/Investors'
 import {Offices} from './CompanyComps/Offices'
-import {Companyfooter} from './CompanyComps/CompanyFooter'
 import GetStarted from '../platforms/GetStarted'
-import Image from 'react-bootstrap/Image'
+
 
 const bluecolor = {
   backgroundColor: '#00BFFF'
@@ -15,9 +13,6 @@ const backg = {
     backgroundColor: '#181818'
 };
 
-const widthStyle = {
-    width: '100%'
-};
 
 class Company extends React.Component {
 
@@ -128,7 +123,7 @@ class Company extends React.Component {
             </div>
 
             <div className="footer-copyright text-center text-white py-3">© 2021 Copyright:
-              <a className="text-white" > HNA.live</a>
+              <a className="text-white" href="/"> HNA.live</a>
             </div>
 
 

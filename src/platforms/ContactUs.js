@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import Button from 'react-bootstrap/Button';
 import GetStarted from '../platforms/GetStarted'
 import '../focus-visible'
@@ -8,9 +8,6 @@ import "mdbreact/dist/css/mdb.css";
 import './LogoTeasers/modal-animations.css'
 import axios from 'axios';
 
-const backg = {
-  backgroundColor: '#181818'
-};
 
 const bluecolor = {
   backgroundColor: '#00BFFF'
@@ -207,7 +204,7 @@ class ContactUs extends React.Component {
         </div>
 
         <div className="footer-copyright text-center text-white py-3">© 2021 Copyright:
-          <a className="text-white"> HNA.live</a>
+          <a className="text-white" href="/"> HNA.live</a>
         </div>
       </footer>
       </div>

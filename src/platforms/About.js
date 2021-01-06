@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react'
-import { Button, Tabs, Tab, InputGroup, FormControl } from 'react-bootstrap';
+import React, {useState} from 'react'
 import HNALogo from './LogoTeasers/HNAlogo'
 import AcademiaLogo from './LogoTeasers/Academialogo'
 import EconLogo from './LogoTeasers/Econlogo'
@@ -11,13 +10,10 @@ import DeedInfo from './LogoTeasers/DeedInfo'
 import '../focus-visible'
 import 'react-responsive-modal/styles.css';
 import './LogoTeasers/modal-animations.css'
-import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBCol, MDBIcon, MDBCloseIcon, MDBAnimation } from 'mdbreact';
+import { MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBCol, MDBIcon, MDBAnimation } from 'mdbreact';
 import "mdbreact/dist/css/mdb.css";
 import './LogoTeasers/modal-animations.css'
 
-const modalWidth = {
-  maxWidth: '1350px!important'
-}
 
 const array = [
     { id: 1, component: <HNALogo/>, isVisible: true, 

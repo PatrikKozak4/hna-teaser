@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import HNALogo from './LogoTeasers/HNAlogo'
 import AcademiaLogo from './LogoTeasers/Academialogo'
 import EconLogo from './LogoTeasers/Econlogo'
@@ -13,11 +13,7 @@ import './LogoTeasers/modal-animations.css'
 import { MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBAnimation } from 'mdbreact';
 import "mdbreact/dist/css/mdb.css";
 import './LogoTeasers/modal-animations.css'
-import ReactPlayer from 'react-player';
 
-const backg = {
-  backgroundColor: '#181818'
-};
 
 const bluecolor = {
   backgroundColor: '#00BFFF'
@@ -109,7 +105,7 @@ const Home = () => {
       <footer style={bluecolor} className="view page-footer font-small pt-2 pb-2">
 
         <div className="footer-copyright text-center text-white my-2 py-4">© 2021 Copyright:
-          <a className="text-white"> HNA.live</a>
+          <a className="text-white" href="/"> HNA.live</a>
         </div>
 
       </footer>

@@ -1,16 +1,10 @@
 import React from 'react'
 import axios from 'axios';
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBCol, MDBIcon, MDBCloseIcon, MDBAnimation } from 'mdbreact';
 
 
 const btncolor = {
     backgroundColor: '#00BFFF'
-}
-
-const closeButton = {
-  marginTop: '20px'
 }
 
 class GetStarted extends React.Component {

@@ -1,9 +1,7 @@
-import React, {useState, useEffect} from 'react'
-import { Button, Tabs, Tab, InputGroup, FormControl } from 'react-bootstrap';
+import React from 'react'
 import Deedlogo from '../../ThreeDfiles/ThreeDArcDeed/ADLogo3Dim.glb'
 import '../../focus-visible'
-
-  
+ 
 const deed3D= {
   width: '235px',
   height: '235px',

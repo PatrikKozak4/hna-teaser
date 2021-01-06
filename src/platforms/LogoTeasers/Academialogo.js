@@ -1,5 +1,4 @@
 import React from 'react'
-import Academialogo from '../../ThreeDfiles/ThreeDAcademia/TryThis.glb'
 import '../../focus-visible'
 
 const academ3D= {
@@ -10,12 +9,7 @@ const academ3D= {
 const AcademiaLogo = () => {
     return (
         <div>
-            <model-viewer src={Academialogo}
-                auto-rotate
-                camera-orbit="95deg 90deg 87m"
-                interaction-policy="allow-when-focused"
-                style={academ3D}>
-            </model-viewer>
+            <img className="img-fluid" src={require('../../img/AA1.png')} alt=""/>
 
         </div>
 

@@ -3,20 +3,14 @@ import Deedlogo from '../../ThreeDfiles/ThreeDArcDeed/ADLogo3Dim.glb'
 import '../../focus-visible'
  
 const deed3D= {
-  width: '235px',
-  height: '235px',
+  width: '95%'
 };
   
 
 const DeedLogo = () => {
     return (
         <div>
-          <model-viewer src={Deedlogo}
-              auto-rotate
-              camera-orbit="160deg 90deg 85m"
-              interaction-policy="allow-when-focused"
-              style={deed3D}>
-          </model-viewer> 
+          <img style={deed3D} className="img-fluid" src={require('../../img/AD1.png')} alt=""/>
         </div>
 
         );

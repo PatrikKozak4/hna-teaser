@@ -1,47 +1,78 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Button, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import styled from 'styled-components';
-import '../App.css';
-
+import ContactUs from '../platforms/ContactUs'
+import GetStarted from '../platforms/GetStarted'
 
 const Styles = styled.div`
-  .navbar {
-    background-color: black;
+@media screen and (max-width: 960px) {
+  .nav-mobile-button {
+    
+    padding: .7rem;
+    margin: .7rem auto;
+    border-radius: 4px;
+    width: 30%;
+    background: #00BFFF;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
   }
+}
 `;
 
 const backg = {
   backgroundColor: '#181818'
 };
 
+const btncolor = {
+  backgroundColor: '#00BFFF'
+}
+
 class NavigationBar extends Component {
+
+ state = {
+  startedModalIsOpen: false
+
+};
+
+openStartedModal = () => {
+  this.setState({ startedModalIsOpen: true });
+};
+
+closeStartedModal = () => {
+  this.setState({ startedModalIsOpen: false });
+};
+
   render() {
     return (
       <Styles>
-        <Navbar collapseOnSelect expand="lg" style={backg} variant="dark">
-          <Navbar.Brand href="/">HourNationArchive</Navbar.Brand>
+        <Navbar id="navhero" collapseOnSelect expand="lg" style={backg} variant="dark">
+          <Navbar.Brand href="/">HNA
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav" >
             <Nav className="mr-auto">
               <Nav.Item>
-              <NavDropdown title="Platform Services" id="collasible-nav-dropdown" >
-                <NavDropdown.Item href="Academia">ArcAcademia</NavDropdown.Item>
-                <NavDropdown.Item href="Deed">ArcDeed</NavDropdown.Item>
-                <NavDropdown.Item href="Economy">ArcEconomy</NavDropdown.Item>
-                <NavDropdown.Item href="HourNationArc">HourNationArc</NavDropdown.Item>
-                <NavDropdown.Item href="Engineering">ArcEngineering</NavDropdown.Item>
-              </NavDropdown>
+                <Nav.Link href="Company" style={{marginRight: 10}}><span className="text-white my-auto">Company</span></Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="about">About</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="contact">Contact</Nav.Link>
+                <Nav.Link href="/contactus" style={{marginRight: 10}}><span className="text-white my-auto">Contact Us</span></Nav.Link>
               </Nav.Item>
             </Nav>
+            <Nav.Item>
+                <Nav.Link style={{marginRight: 10}}><span className="text-white my-auto">Register for our Waitlist!</span></Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <a onClick={this.openStartedModal} style={btncolor} className="btn  text-white">Sign Up!<i></i></a>
+            </Nav.Item>
           </Navbar.Collapse>
+          
         </Navbar>
+
+        <GetStarted
+           startedModalIsOpen={this.state.startedModalIsOpen}
+           closeStartedModal={this.closeStartedModal}
+        />
       </Styles>
     );
   }

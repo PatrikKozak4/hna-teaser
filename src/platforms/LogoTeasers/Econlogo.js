@@ -2,7 +2,8 @@ import React from 'react'
 import '../../focus-visible'
   
 const econ3D= {
-  width: '90%',
+  width: '237px',
+  height: '237px'
   
 };
 

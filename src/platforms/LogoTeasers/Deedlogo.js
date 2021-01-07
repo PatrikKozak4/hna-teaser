@@ -2,7 +2,8 @@ import React from 'react'
 import '../../focus-visible'
  
 const deed3D= {
-  width: '95%'
+  width: '270px',
+  height: '225px'
 };
   
 

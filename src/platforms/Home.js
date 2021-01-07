@@ -51,7 +51,6 @@ const Home = () => {
     };
 
     return (
-      <body>
       <div className="main-container">
         <div className="">
           <div className="mt-1 my-3 py-1 text-center z-depth-1 mb-1">
@@ -112,7 +111,7 @@ const Home = () => {
       </div>
       
       </div>
-      </body>
+      
     );
   };
   

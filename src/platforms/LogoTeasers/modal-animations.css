@@ -12,10 +12,10 @@
 
 @media (min-width: 1200px) {
   .custom-modal-size {
-    max-width: 1000px !important;
+    max-width: 960px !important;
     
     position: fixed !important;
-    inset: auto 0px 530px auto !important;
+    inset: auto 0px 260px auto !important;
     
   }
   

@@ -12,12 +12,12 @@ class Gallery extends React.Component {
   render() {
     return (
       <div className="container">
-			  <section className="py-5">
+			  <section className="py-4">
 				  <h1 className="text-center mb-5">Team HourNationArchive</h1>
           <div className="row">
             
 
-              <div className="col-md-3">
+              <div className="col-md-3 mb-3">
                 <div className="hovereffect">
                   <img style={widthStyleCoop} className="img-fluid" src={require('../../img/portraitCoop.png')} alt=""/>
                     <div className="overlay">

@@ -59,17 +59,17 @@ const Home = () => {
               </MDBAnimation>
             </div>
         </div>
-        <div className="mt-1 pt-3 pb-1 px-1 z-depth-1">
-          <div className="row d-flex my-1 ">
+        <div className="mt-1 pt-3 pb-1 px-1">
+          <div className="row my-1 d-flex z-depth-1">
           {items.map(({ id, component, isVisible, info }) => (
             isVisible ? 
               <div
                 key={id}
-                className="col-lg-3 col-md-6 border-right d-flex justify-content-center"
+                className="col-lg-3 col-md-6 border-right d-flex justify-content-center "
                 onClick={() => handleClick(id)}
                 hidden={!isVisible}
               >
-              <div className="row mb-3">
+              <div className="row mb-3 d-flex align-items-center">
                 
                   <div className="col-12">
                     { component }
@@ -81,7 +81,7 @@ const Home = () => {
                 key={info.id} 
               >
 
-                <MDBModal isOpen={info.isVisibleInfo} backdrop={false} className="custom-modal-size overflow-hidden" overflowScroll={false}>
+                <MDBModal isOpen={info.isVisibleInfo} backdrop={false} centered position="right" className="custom-modal-size overflow-hidden" overflowScroll={false}>
                   <MDBModalHeader className="justify-content-center" tag="h3" closeAriaLabel="Close">
                     { info.header }
                   </MDBModalHeader>
@@ -104,7 +104,7 @@ const Home = () => {
       <footer style={bluecolor} className="view page-footer font-small pt-2 pb-2">
 
         <div className="footer-copyright text-center text-white my-2 py-4">© 2021 Copyright:
-          <a className="text-white" href="/"> HNA.live</a>
+          <a className="text-white" href="/"> hna.live</a>
         </div>
 
       </footer>

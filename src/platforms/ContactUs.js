@@ -177,7 +177,7 @@ class ContactUs extends React.Component {
                 </li>
                 <li>
                   <i className="fa fa-envelope fa-2x mt-4 blue-text"></i>
-                  <p className="mb-0">menzeljared@HNA.live</p>
+                  <p className="mb-0">menzeljared@hna.live</p>
                 </li>
               </ul>
             </div>
@@ -204,7 +204,7 @@ class ContactUs extends React.Component {
         </div>
 
         <div className="footer-copyright text-center text-white py-3">© 2021 Copyright:
-          <a className="text-white" href="/"> HNA.live</a>
+          <a className="text-white" href="/"> hna.live</a>
         </div>
       </footer>
       </div>

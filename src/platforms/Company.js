@@ -1,5 +1,4 @@
 import React from 'react'
-import { Tabs, Tab } from 'react-bootstrap';
 import Gallery from './CompanyComps/Gallery'
 import {Offices} from './CompanyComps/Offices'
 import GetStarted from '../platforms/GetStarted'
@@ -96,13 +95,7 @@ class Company extends React.Component {
           </div>
 
           <div>
-            <Tabs defaultActiveKey="team" className="nav-justified">
-              <Tab eventKey="team" title="Our Team" className="tab-content mb-5">
-
-                  <Gallery/>
-
-              </Tab>
-            </Tabs>
+              <Gallery/>
           </div>
 
           <Offices/>
@@ -123,7 +116,7 @@ class Company extends React.Component {
             </div>
 
             <div className="footer-copyright text-center text-white py-3">© 2021 Copyright:
-              <a className="text-white" href="/"> HNA.live</a>
+              <a className="text-white" href="/"> hna.live</a>
             </div>
 
 

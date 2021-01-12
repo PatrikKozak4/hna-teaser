@@ -61,7 +61,7 @@ class ContactUs extends React.Component {
       <div className="main-container">
       <div className="container z-depth-1">
 
-        <section className="text-center px-md-5 mx-md-5 dark-grey-text">
+        <section className="text-center px-md-4 mx-md-4 dark-grey-text">
 
 
           <h3 className="font-weight-bold mb-4">Contact Us</h3>
@@ -70,7 +70,7 @@ class ContactUs extends React.Component {
 
           <div className="row">
 
-            <div className="col-md-9 mb-md-0 mb-5">
+            <div className="col-md-8 mb-md-0 mb-5">
 
               <form onSubmit={this.handleSubmit.bind(this)} method="POST">
 
@@ -165,8 +165,8 @@ class ContactUs extends React.Component {
 
             </div>
 
-            <div className="col-md-3 text-center">
-              <ul className="list-unstyled mb-0">
+            <div className="col-md-4 text-center">
+              <ul className="list-unstyled mb-1">
                 <li>
                   <i className="fa fa-map-marker fa-2x blue-text"></i>
                   <p>Grand Rapids, MI 49544, USA</p>

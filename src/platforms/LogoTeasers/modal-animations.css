@@ -1,17 +1,48 @@
 .custom-modal-size {
-  max-width: 820px !important;
-  height: 400px !important;
-  
-  
+  max-width: 100% !important;
+  width: 100% !important;
+  top: 30px !important;
+  background: transparent;
 }
 
-.custom-modal-size ::-webkit-scrollbar {
-  width: 0 !important;
+@media (min-width: 768px) {
+  .custom-modal-size {
+    max-width: 680px !important;
+    top: 30px !important;
+  }
+  
+  .custom-modal-size ::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}
+
+@media (min-width: 950px) {
+  .custom-modal-size {
+    max-width: 690px !important;
+    top: 30px !important;
+  }
+  
+  .custom-modal-size ::-webkit-scrollbar {
+    width: 0 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-modal-size {
+    max-width: 760px !important;
+    top: 0px !important;
+    
+  }
+  
+  .custom-modal-size ::-webkit-scrollbar {
+    width: 0 !important;
+  }
 }
 
 @media (min-width: 1200px) {
   .custom-modal-size {
-    max-width: 900px !important;
+    max-width: 915px !important;
+    top: 0px !important;
     
   }
   
@@ -49,7 +80,8 @@
   min-height: 92vh;
 }
 
-body {
+/* Home Page Footer */
+html, body {
   height: 100%;
   width: 100%;
 }
@@ -68,6 +100,54 @@ body {
   height: 100px;
 }
 
+@media (max-width: 991px) {
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+  .main-container {
+    min-height: calc(100vh - 100px);
+    padding: 0 0 100px;
+    position: relative;
+    
+  }
+
+  .footer-home {
+    margin-top: 100vh;
+    height: 100px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+  }
+}
+/*************************/
+/* Contact Page Footer */
+/*************************/
+
+@media (max-width: 991px) {
+  .contact-body {
+    height: 100%;
+    position: relative;
+  }
+  
+  .contact-container {
+    min-height: calc(100vh - 100px); /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px; /* height of your footer */
+   }
+  
+   .footer-contact {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+   }
+}
+
 @media (min-width: 1200px) {
   .contact-body {
     height: 100%;
@@ -75,7 +155,7 @@ body {
   }
   
   .contact-container {
-    min-height: 100vh; /* will cover the 100% of viewport */
+    min-height: calc(100vh - 170px); /* will cover the 100% of viewport */
     overflow: hidden;
     display: block;
     position: relative;
@@ -86,5 +166,23 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 170px;
    }
+}
+
+.vertical-center {
+  margin-right: 0;
+  margin-left: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.logo-position {
+  position: relative;
+}
+
+.modal-position {
+  position: absolute;
 }

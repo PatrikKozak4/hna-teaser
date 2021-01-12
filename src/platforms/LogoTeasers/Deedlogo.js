@@ -1,16 +1,16 @@
 import React from 'react'
 import '../../focus-visible'
  
-const deed3D= {
-  width: '270px',
-  height: '225px'
+const deed= {
+  width: '210px',
+  height: '165px'
 };
   
 
 const DeedLogo = () => {
     return (
-        <div>
-          <img style={deed3D} className="img-fluid" src={require('../../img/AD1.png')} alt=""/>
+        <div className="mt-2 mb-2">
+          <img style={deed} className="img-fluid" src={require('../../img/AD2.png')} alt=""/>
         </div>
 
         );

@@ -10,7 +10,7 @@ import DeedInfo from './LogoTeasers/DeedInfo'
 import '../focus-visible'
 import 'react-responsive-modal/styles.css';
 import './LogoTeasers/modal-animations.css'
-import { MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBAnimation } from 'mdbreact';
+import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBAnimation } from 'mdbreact';
 import "mdbreact/dist/css/mdb.css";
 import './LogoTeasers/modal-animations.css'
 
@@ -59,19 +59,19 @@ const Home = () => {
               </MDBAnimation>
             </div>
         </div>
-        <div className="mt-1 pt-3 pb-1 px-1">
-          <div className="row my-1 d-flex z-depth-1">
+        <div className="logo-position ">
+          <div className="mt-1 pt-3 pb-1 my-1 row d-flex z-depth-1">
           {items.map(({ id, component, isVisible, info }) => (
             isVisible ? 
               <div
                 key={id}
-                className="col-lg-3 col-md-6 border-right d-flex justify-content-center "
+                className="col-xl-3 col-lg-3 col-md-6 border-right d-flex justify-content-center"
                 onClick={() => handleClick(id)}
                 hidden={!isVisible}
               >
-              <div className="row mb-3 d-flex align-items-center">
+              <div className="mb-3 row d-flex align-items-center justify-content-center">
                 
-                  <div className="col-12">
+                  <div className="col-12 d-flex justify-content-center">
                     { component }
                   </div>
                 
@@ -80,18 +80,19 @@ const Home = () => {
               <div
                 key={info.id} 
               >
-
-                <MDBModal isOpen={info.isVisibleInfo} backdrop={false} centered position="right" className="custom-modal-size overflow-hidden" overflowScroll={false}>
-                  <MDBModalHeader className="justify-content-center" tag="h3" closeAriaLabel="Close">
+              <MDBContainer className="d-md-flex">
+                <MDBModal isOpen={info.isVisibleInfo}   fullHeight position="right" className="custom-modal-size">
+                  <MDBModalHeader className="justify-content-center" tag="h3" >
                     { info.header }
                   </MDBModalHeader>
-                  <MDBModalBody>
+                  <MDBModalBody overflowScroll={true}>
                     {info.component}
                   </MDBModalBody>
                   <MDBModalFooter className="justify-content-center">
                     <MDBBtn color="primary" onClick={!info.isVisibleInfo}>Close</MDBBtn>
                   </MDBModalFooter>
                 </MDBModal>
+                </MDBContainer>
                 
               </div>
               : null}
@@ -100,16 +101,15 @@ const Home = () => {
           </div>
         </div>
 
-      <div className="footer-home">
-      <footer style={bluecolor} className="view page-footer font-small pt-2 pb-2">
+        <div className="footer-home">
+          <footer style={bluecolor} className="view page-footer font-small pt-2 pb-2">
 
-        <div className="footer-copyright text-center text-white my-2 py-4">© 2021 Copyright:
-          <a className="text-white" href="/"> hna.live</a>
+            <div className="footer-copyright text-center text-white my-2 py-4">© 2021 Copyright:
+              <a className="text-white" href="/"> hna.live</a>
+            </div>
+
+          </footer>
         </div>
-
-      </footer>
-      </div>
-      
       </div>
       
     );

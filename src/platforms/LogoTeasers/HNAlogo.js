@@ -1,16 +1,16 @@
 import React from 'react'
 import '../../focus-visible'
 
-const hna3D = {
-    width: '240px',
-    height: '210px'
-}
 
+const hna = {
+    width: '195px',
+    height: '195px'
+}
 
 const HNALogo = () => {
     return (
-        <div >
-            <img style={hna3D} className="img-fluid" src={require('../../img/HNA1.png')} alt=""/>
+        <div className="mt-2 mb-2">
+            <img style={hna} className="img-fluid" src={require('../../img/HNA2.png')} alt=""/>
 
         </div>
 

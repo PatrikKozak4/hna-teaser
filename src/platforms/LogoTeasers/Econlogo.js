@@ -1,16 +1,16 @@
 import React from 'react'
 import '../../focus-visible'
   
-const econ3D= {
-  width: '237px',
-  height: '237px'
+const econ= {
+  width: '160px',
+  height: '160px'
   
 };
 
 const EconLogo = () => {
     return (
-        <div>
-          <img style={econ3D} className="img-fluid" src={require('../../img/AE1.png')} alt=""/>
+        <div className="mt-2 mb-2">
+          <img style={econ} className="img-fluid" src={require('../../img/AE2.png')} alt=""/>
 
         </div>
 

@@ -1,15 +1,15 @@
 import React from 'react'
 
-const widthStyle = {
+const widthStyleGR = {
     width: '100%'
 };
 
 const widthStyleDenver = {
-  width: '100%'
+  width: '90%'
 };
 
 const widthStyleBridgman = {
-  width: '85%'
+  width: '82%'
 };
 
 const backg = {
@@ -28,27 +28,27 @@ export const Offices = () => (
 
     <div className="row text-center d-flex justify-content-center">
 
-      <div style={hqimg} className="col-lg-4 col-md-6 mb-lg-0 mb-0">
+      <div style={hqimg} className="col-lg-4 col-md-6 mb-lg-0 mb-3">
+
+        <h4 className="font-weight-bold mb-3">Denver</h4>
 
         <img style={widthStyleDenver} src={require('../../img/DenverScetchv6.png')} className="img-fluid mb-4" alt=""/>
 
-        <h4 className="font-weight-bold mb-0">Denver</h4>
+      </div>
+
+      <div style={hqimg} className="col-lg-4 col-md-6 mb-lg-0 mb-3">
+
+        <h4 className="font-weight-bold mb-3">Grand Rapids</h4>
+
+        <img style={widthStyleGR} src={require('../../img/GrandRapidsScetchv2.png')} className="img-fluid mb-4" alt=""/>
 
       </div>
 
-      <div style={hqimg} className="col-lg-4 col-md-6 mb-lg-0 mb-0">
+      <div style={hqimg} className="col-lg-4 col-md-6 mb-lg-0 mb-3">
 
-        <img style={widthStyle} src={require('../../img/GrandRapidsScetchv2.png')} className="img-fluid mb-4" alt=""/>
-
-        <h4 className="font-weight-bold mb-0">Grand Rapids</h4>
-
-      </div>
-
-      <div style={hqimg} className="col-lg-4 col-md-6 mb-lg-0 mb-0">
+        <h4 className="font-weight-bold mb-3">Bridgman</h4>
 
         <img style={widthStyleBridgman} src={require('../../img/BridgmanScetch1.png')} className="img-fluid mb-5" alt=""/>
-
-        <h4 className="font-weight-bold mb-0">Bridgman</h4>
 
       </div>
 

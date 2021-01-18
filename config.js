@@ -1,4 +1,4 @@
 module.exports = {
-    USER: 'kozakp@mail.gvsu.edu', 
-    PASS: 'rUbwDLxq4KOZPk{}',
+    USER: 'process.env.USER', 
+    PASS: 'process.env.PASS',
 }

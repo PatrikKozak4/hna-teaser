@@ -31,7 +31,7 @@ class ContactUs extends React.Component {
     e.preventDefault();
     axios({
       method: "POST", 
-      url:"http://localhost:3002/sendUs", 
+      url:"https://hna-teaser.herokuapp.com/sendUs", 
       data:  this.state
     }).then((response)=>{
       if (response.data.status === 'success') {

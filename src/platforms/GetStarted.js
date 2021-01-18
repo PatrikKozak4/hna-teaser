@@ -21,7 +21,7 @@ class GetStarted extends React.Component {
         e.preventDefault();
         axios({
           method: "POST", 
-          url:"http://localhost:3002/sendLaunch", 
+          url:"https://hna-teaser.herokuapp.com/sendLaunch", 
           data:  this.state
         }).then((response)=>{
           if (response.data.status === 'success') {

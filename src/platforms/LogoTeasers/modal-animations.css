@@ -186,3 +186,10 @@ html, body {
 .modal-position {
   position: absolute;
 }
+
+.btnblue-color {
+  border-color: #00BFFF !important;
+  background-color:  #00BFFF !important;
+  color: white !important;
+  
+}

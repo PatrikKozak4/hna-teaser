@@ -15,20 +15,6 @@ const backg = {
 
 class Company extends React.Component {
 
-  state = {
-    secondModalIsOpen: false,
-    startedModalIsOpen: false,
-  
-  };
-
-  openStartedModal = () => {
-    this.setState({ startedModalIsOpen: true });
-  };
-  
-  closeStartedModal = () => {
-    this.setState({ startedModalIsOpen: false });
-  };
-
   render() {
     return (
 
@@ -109,7 +95,7 @@ class Company extends React.Component {
                   <h5 className="mb-1">Register for our Waitlist:</h5>
                 </li>
                 <li className="list-inline-item">
-                  <a onClick={this.openStartedModal} href="#!" className="btn btn-outline-white">Sign up!</a>
+                  <GetStarted/>
                 </li>
               </ul>
 
@@ -121,12 +107,6 @@ class Company extends React.Component {
 
 
           </footer>
-          
-
-          <GetStarted
-           startedModalIsOpen={this.state.startedModalIsOpen}
-           closeStartedModal={this.closeStartedModal}
-          />
         
       </React.Fragment>
     );

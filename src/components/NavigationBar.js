@@ -29,19 +29,6 @@ const btncolor = {
 
 class NavigationBar extends Component {
 
- state = {
-  startedModalIsOpen: false
-
-};
-
-openStartedModal = () => {
-  this.setState({ startedModalIsOpen: true });
-};
-
-closeStartedModal = () => {
-  this.setState({ startedModalIsOpen: false });
-};
-
   render() {
     return (
       <Styles>
@@ -62,16 +49,13 @@ closeStartedModal = () => {
                 <Nav.Link style={{marginRight: 10}}><span className="text-white my-auto">Register for our Waitlist!</span></Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <a onClick={this.openStartedModal} style={btncolor} href="#!" className="btn text-white">Sign Up!<i></i></a>
+              <GetStarted/>
             </Nav.Item>
           </Navbar.Collapse>
           
         </Navbar>
 
-        <GetStarted
-           startedModalIsOpen={this.state.startedModalIsOpen}
-           closeStartedModal={this.closeStartedModal}
-        />
+        
       </Styles>
     );
   }

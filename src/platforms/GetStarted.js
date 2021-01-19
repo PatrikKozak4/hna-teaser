@@ -1,133 +1,143 @@
-import React from 'react'
+import React, {useState} from 'react'
 import axios from 'axios';
 import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 
 
 const btncolor = {
     backgroundColor: '#00BFFF'
 }
 
-class GetStarted extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          firstNameLaunch: '',
-          lastNameLaunch: '',
+const GetStarted = () => {
+  const [state, setSate] = useState({
+    firstNameLaunch: '',
+    lastNameLaunch: '',
+    emailLaunch: ''
+  });
+
+  const [result, setResult] = useState(null);
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const sendMail = event => {
+    event.preventDefault();
+    axios
+      .post('/sendLaunch', { ...state })
+      .then(response => {
+        setResult(response.data);
+        setSate({
+          firstNameLaunch: '', 
+          lastNameLaunch: '', 
           emailLaunch: ''
-        }
-      }
+        });
+      })
+      .catch(() => {
+        setResult({ success: false, message: 'Something went wrong. Try again later'});
+      });
+  };
 
-      handleSubmit(e){
-        e.preventDefault();
-        axios({
-          method: "POST", 
-          url:"https://hna-teaser.herokuapp.com/sendLaunch", 
-          data:  this.state
-        }).then((response)=>{
-          if (response.data.status === 'success') {
-            alert("Message Sent."); 
-            this.resetForm()
-          } else if (response.data.status === 'fail') {
-            alert("Message failed to send.")
-          }
-        })
-      }
-    
-      resetForm(){
-        this.setState({firstNameLaunch: '', lastNameLaunch: '', emailLaunch: ''})
-      }
+  const onInputChange = event => {
+    const {name, value} = event.target;
 
-    render() { 
-    return (
-        <>
-          <Modal 
-            show={this.props.startedModalIsOpen} 
-            onHide={this.props.closeStartedModal}
-            size="md"
-            centered
-          >
-              <div >
+    setSate({
+      ...state,
+      [name]: value
+    });
+  };
 
-                <div className="mt-1 text-center text-lg-left dark-grey-text">
+  return (
+    <div>
 
-                <button type="button" className="close closeButton" aria-label="Close" style={{marginRight: 10}} onClick={this.props.closeStartedModal}>
-                    <span aria-hidden="true">&times;</span>
-                </button>
+      <a onClick={handleShow} href="#!" className="btn btn-outline-white text-white" style={btncolor}>Sign Up!<i></i></a>
 
-                    <div className="row justify-content-center">
-                    
-                        <div className="col-md-10">
-                        
-                            <form className="text-center" onSubmit={this.handleSubmit.bind(this)} method="POST">
-                            <p className="h4 my-2">Coming Soon!</p>
-                            
-                            <p style={{fontSize: '14px'}} className=""> Sign up to get notified when we launch. </p>
-                            
-                                <div className="form-row mb-1">
-                                    <div className="col">
-                        
-                                        <input 
-                                            type="text" 
-                                            id="firstNameLaunch" 
-                                            className="form-control" 
-                                            placeholder="First Name"
-                                            required
-                                            value={this.state.firstNameLaunch} onChange={this.onFirstNameChange.bind(this)}
-                                        />
-                                        <label htmlFor="firstNameLaunch" className=""></label>
-                                    </div>
+      <Modal 
+        show={show} 
+        onHide={handleClose}
+        size="md"
+        centered
+      >
+          <div >
 
-                                    <div className="col">
+            <div className="mt-1 text-center text-lg-left dark-grey-text">
+
+            <button type="button" className="close closeButton" aria-label="Close" style={{marginRight: 10}} onClick={handleClose}>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+                <div className="row justify-content-center">
                 
-                                        <input 
-                                            type="text" 
-                                            id="lastNameLaunch" 
-                                            className="form-control" 
-                                            placeholder="Last Name"
-                                            required
-                                            value={this.state.lastNameLaunch} onChange={this.onlastNameChange.bind(this)}
-                                        />
-                                        <label htmlFor="lastNameLaunch" className=""></label>
-                                    </div>
+                    <div className="col-md-10">
+                    
+                        <form className="text-center" onSubmit={sendMail}>
+                        <p className="h4 my-2">Coming Soon!</p>
+                        
+                        <p style={{fontSize: '14px'}} className=""> Sign up to get notified when we launch. </p>
+
+                        {result && (
+                          <p style={{fontSize: '14px'}} className={`${result.success ? 'success' : 'error'}`}>
+                            {result.message}
+                          </p>
+                        )}
+                        
+                            <div className="form-row mb-1">
+                                <div className="col">
+                    
+                                    <input 
+                                        type="text" 
+                                        id="firstNameLaunch"
+                                        name="firstNameLaunch" 
+                                        className="form-control" 
+                                        placeholder="First Name"
+                                        required
+                                        value={state.firstNameLaunch} 
+                                        onChange={onInputChange}
+                                    />
+                                    <label htmlFor="firstNameLaunch" className=""></label>
                                 </div>
 
-                        
-                                <input 
-                                    type="email" 
-                                    id="emailLaunch" 
-                                    className="form-control" 
-                                    placeholder="Email"
-                                    required
-                                    value={this.state.emailLaunch} onChange={this.onEmailChange.bind(this)}
-                                />
-                                <label htmlFor="emailLaunch" className=""></label>
+                                <div className="col">
             
-                                <button onClick={this.props.closeStartedModal} style={btncolor} className="btn my-2 mb-4 btn-block text-white" type="submit">
-                                Sign Up
-                                </button>
+                                    <input 
+                                        type="text" 
+                                        id="lastNameLaunch" 
+                                        name="lastNameLaunch"
+                                        className="form-control" 
+                                        placeholder="Last Name"
+                                        required
+                                        value={state.lastNameLaunch} 
+                                        onChange={onInputChange}
+                                    />
+                                    <label htmlFor="lastNameLaunch" className=""></label>
+                                </div>
+                            </div>
 
-                            </form>
-                        </div>
+                    
+                            <input 
+                                type="email" 
+                                id="emailLaunch" 
+                                name="emailLaunch"
+                                className="form-control" 
+                                placeholder="Email"
+                                required
+                                value={state.emailLaunch} 
+                                onChange={onInputChange}
+                            />
+                            <label htmlFor="emailLaunch" className=""></label>
+        
+                            <Button type="submit" style={btncolor} className="btn my-2 mb-4 btn-block text-white">
+                              Sign Up
+                            </Button>
+
+                        </form>
                     </div>
                 </div>
-              </div>  
-          </Modal>
-       
-        </>
-     );
-    }
-
-    onFirstNameChange(event) {
-        this.setState({firstNameLaunch: event.target.value})
-    }
-
-    onlastNameChange(event) {
-        this.setState({lastNameLaunch: event.target.value})
-    }
+            </div>
+          </div>  
+      </Modal>
     
-    onEmailChange(event) {
-        this.setState({emailLaunch: event.target.value})
-    }
+    </div>
+  );
+};
 
-}
 export default GetStarted;

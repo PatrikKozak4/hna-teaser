@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 const app = express();
 
-const buildPath = path.join(__dirname, '..', 'build');
+const buildPath = path.join(__dirname, '.', 'build');
 app.use(express.json());
 app.use(express.static(buildPath));
 
@@ -133,7 +133,7 @@ app.post('/sendLaunch', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, '.', 'build', 'index.html'));
 });
 
 app.listen(process.env.PORT || 3030, () => {

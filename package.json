@@ -38,7 +38,7 @@
 
 
   "scripts": {
-    "start": "node server/index.js",
+    "start": "npm run build && node server/index.js",
     "heroku-postbuild": "npm install && npm run build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

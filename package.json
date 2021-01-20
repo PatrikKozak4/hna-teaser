@@ -39,11 +39,11 @@
 
 
   "scripts": {
-    "start": "npm run --max_old_space_size=4096 build && node server/index.js",
+    "start": "npm run build && node server/index.js",
     "heroku-postbuild": "npm install && npm run build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build": "react-scripts --max_old_space_size=4096 build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start-server": "node server/index.js",

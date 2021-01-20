@@ -23,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # nodemailer config
-/server/config.js
+
 
 #env
 .env

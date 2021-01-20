@@ -136,6 +136,4 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
 });
 
-app.listen(process.env.PORT || 3030, () => {
-  console.log('server start on port 3030');
-});
+app.listen(process.env.PORT || 3030);

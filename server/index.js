@@ -132,6 +132,7 @@ app.post('/sendLaunch', (req, res) => {
 
 });
 
+// App does not load properly locally without this snippet of code below
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
 });

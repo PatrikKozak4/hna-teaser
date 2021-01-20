@@ -23,10 +23,6 @@ const backg = {
   backgroundColor: '#181818'
 };
 
-const btncolor = {
-  backgroundColor: '#00BFFF'
-}
-
 class NavigationBar extends Component {
 
   render() {

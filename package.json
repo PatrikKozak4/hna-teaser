@@ -27,7 +27,7 @@
     "reactstrap": "^8.6.0",
     "styled-components": "^5.2.0",
     "three": "^0.120.1",
-    "@babel/core": "^7.12.3",
+    
     "@babel/node": "^7.12.1",
     "dotenv": "^8.2.0"
   },

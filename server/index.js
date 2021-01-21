@@ -44,6 +44,7 @@ app.post('/send', (req, res) => {
       }
     });
   } catch (error) {
+    console.log('E', error);
     res.status(500).send({
       success: false,
       message: 'Something went wrong. Try again later'
@@ -64,7 +65,7 @@ const mailGenerator = new Mailgen({
 
 app.post('/sendLaunch', (req, res) => {
   try {
-    const mailOptions = {
+    const mailLaunchOptions = {
       from: req.body.emailLaunch, // sender address
       to: process.env.email, // list of receivers
       subject: 'New Sign-Up Customer', // Subject line
@@ -95,7 +96,7 @@ app.post('/sendLaunch', (req, res) => {
       html: emailRespLaunch,
     };
 
-    transporter.sendMail(mailOptions, function (err, info) {
+    transporter.sendMail(mailLaunchOptions, function (err, info) {
       if (err) {
         res.status(500).send({
           success: false,
@@ -122,6 +123,7 @@ app.post('/sendLaunch', (req, res) => {
     });
     
   } catch (error) {
+    console.log('E', error);
     res.status(500).send({
       success: false,
       message: 'Something went wrong. Try again later'

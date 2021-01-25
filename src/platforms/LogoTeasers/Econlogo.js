@@ -2,7 +2,7 @@ import React from 'react'
 import '../../focus-visible'
   
 const econ= {
-  width: '160px',
+  width: '155px',
   height: '160px'
   
 };

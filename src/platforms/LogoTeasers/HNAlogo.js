@@ -3,8 +3,8 @@ import '../../focus-visible'
 
 
 const hna = {
-    width: '195px',
-    height: '195px'
+    width: '190px',
+    height: '190px'
 }
 
 const HNALogo = () => {

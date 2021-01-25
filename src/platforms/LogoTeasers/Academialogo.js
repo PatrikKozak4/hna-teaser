@@ -3,14 +3,14 @@ import '../../focus-visible'
 
 
 const aca = {
-    width: '175px',
-    height: '160px'
+    width: '170px',
+    height: '155px'
 };
 
 const AcademiaLogo = () => {
     return (
         <div className="mt-2 mb-2">
-            <img style={aca} className="img-fluid" src={require('../../img/AA2.png')} alt=""/>
+            <img style={aca} className="img-fluid" src={require('../../img/AA3.png')} alt=""/>
 
         </div>
 

@@ -193,3 +193,10 @@ html, body {
   color: white !important;
   
 }
+
+/* Shifting Academia Logo Right due to alignment problem */
+@media (max-width: 767px) {
+  .academ-logo-shift {
+    margin-left: 33px;
+  }
+}

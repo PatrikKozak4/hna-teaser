@@ -187,7 +187,7 @@ const ContactUs = () => {
                   </li>
                   <li>
                     <i className="fa fa-envelope fa-2x mt-4 blue-text"></i>
-                    <p className="mb-0">menzeljared@hna.live</p>
+                    <p className="mb-0">cmojsiejenko@hna.live</p>
                   </li>
                 </ul>
               </div>

@@ -1,6 +1,6 @@
 ## About
 
-This website acts as a teaser website ofr an up and coming tech startup called HourNationArchive (HNA).
+This website acts as a teaser website for an up and coming tech startup called HourNationArchive (HNA).
 The website introduces some of the bsic important concepts of each platform to show anyone interested
 what we are all about. 
 

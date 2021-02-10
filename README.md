@@ -8,7 +8,7 @@ The website also hosts an email server made using NodeJs/Express/Nodemailer. The
 register their name and email to begin receiving updates regarding our progress with our web application for HNA,
 as well as, a contact form that allows anyone to email us with any questions.
 
-The website was developed primarily with ReactJS and Bootstrap. 
+The website was developed primarily with ReactJS and Bootstrap for a responsive design. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

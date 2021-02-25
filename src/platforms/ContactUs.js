@@ -179,11 +179,11 @@ const ContactUs = () => {
                 <ul className="list-unstyled mb-1">
                   <li>
                     <i className="fa fa-map-marker fa-2x blue-text"></i>
-                    <p>Grand Rapids, MI 49544, USA</p>
+                    <p>8 The Green, Ste A Dover, DE 19901</p>
                   </li>
                   <li>
                     <i className="fa fa-phone fa-2x mt-4 blue-text"></i>
-                    <p>+ 1 (616) 633-7470 </p>
+                    <p>+ 1 (269) 519-9273 </p>
                   </li>
                   <li>
                     <i className="fa fa-envelope fa-2x mt-4 blue-text"></i>

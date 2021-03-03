@@ -183,11 +183,11 @@ const ContactUs = () => {
                   </li>
                   <li>
                     <i className="fa fa-phone fa-2x mt-4 blue-text"></i>
-                    <p>+ 1 (269) 519-9273 </p>
+                    <p>+ 1 (317) 204-6445 </p>
                   </li>
                   <li>
                     <i className="fa fa-envelope fa-2x mt-4 blue-text"></i>
-                    <p className="mb-0">cmojsiejenko@hna.live</p>
+                    <p className="mb-0">questions@hna.live</p>
                   </li>
                 </ul>
               </div>

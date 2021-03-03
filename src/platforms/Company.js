@@ -71,7 +71,7 @@ class Company extends React.Component {
                   </p>
 
                   <p>
-                      HourNationArchive was founded in 2020 and is headquartered in Delaware. To explore HNA’s team and 
+                      HourNationArchive was founded in 2021 and is headquartered in Delaware. To explore HNA’s team and 
                       community involvement then select the designated tabs below.    
                   </p>
 

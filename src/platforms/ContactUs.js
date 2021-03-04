@@ -183,7 +183,7 @@ const ContactUs = () => {
                   </li>
                   <li>
                     <i className="fa fa-phone fa-2x mt-4 blue-text"></i>
-                    <p>+ 1 (317) 204-6445 </p>
+                    <p>+1 (302) 291-1019</p>
                   </li>
                   <li>
                     <i className="fa fa-envelope fa-2x mt-4 blue-text"></i>
